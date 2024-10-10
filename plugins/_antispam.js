@@ -65,7 +65,7 @@ export async function before(m, { isAdmin, isBotAdmin, command }) {
             }
         }
     } else { // Handle private chats
-        if (userActivity.count > 3) { // Adjust the spam threshold as needed
+        if (userActivity.count > 4) { // Adjust the spam threshold as needed
             await this.sendMessage(m.chat, { text: `*Ops!*,\n*${user}*, YOU ARE SPAMMING AND HAVE BEEN BLOCKED!`, mentions: [m.sender] });
 
             // Block the user
