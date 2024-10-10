@@ -34,7 +34,7 @@ In case of doubt, before installing BUMBLEBEE-BOT, test the bot here
 ***
 
 #### Deploy to Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/khalid-official/BUMBLEBEE-BOT)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Antispam-bot/Antispam-bot-/tree/main)
 
 
 ## ```USER REPLIT```
