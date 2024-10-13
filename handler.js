@@ -617,7 +617,7 @@ export async function handler(chatUpdate) {
         if (!('sBye' in chat)) chat.sBye = '';
         if (!('sPromote' in chat)) chat.sPromote = '';
         if (!('sDemote' in chat)) chat.sDemote = '';
-        if (!('delete' in chat)) chat.antidelete = false;
+        if (!('delete' in chat)) chat.antidelete = true;
         if (!('modohorny' in chat)) chat.modohorny = true;
         if (!('autosticker' in chat)) chat.autosticker = false;
         if (!('audios' in chat)) chat.audios = false;
@@ -644,7 +644,7 @@ export async function handler(chatUpdate) {
           sBye: '',
           sPromote: '',
           sDemote: '',
-          antidelete: false,
+          antidelete: true,
           modohorny: true,
           autosticker: false,
           audios: true,
@@ -679,7 +679,7 @@ export async function handler(chatUpdate) {
 	if (!('modoia' in settings)) settings.modoia = false;      
       } else {
         global.db.data.settings[this.user.jid] = {
-          self: false,
+          self: true,
           autoread: false,
           autoread2: false,
           restrict: true,
