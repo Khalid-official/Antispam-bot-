@@ -1,1 +1,1278 @@
-'use strict';const _0x55d7de=_0x3acf;(function(_0x42da44,_0x1d3bcf){const _0x4ef20c=_0x3acf,_0x337f0d=_0x42da44();while(!![]){try{const _0x25a86e=-parseInt(_0x4ef20c(0x15b))/0x1+parseInt(_0x4ef20c(0xd8))/0x2*(parseInt(_0x4ef20c(0x100))/0x3)+-parseInt(_0x4ef20c(0x11b))/0x4*(parseInt(_0x4ef20c(0x106))/0x5)+parseInt(_0x4ef20c(0x15d))/0x6*(-parseInt(_0x4ef20c(0x146))/0x7)+parseInt(_0x4ef20c(0xc7))/0x8*(parseInt(_0x4ef20c(0xd7))/0x9)+-parseInt(_0x4ef20c(0xb1))/0xa+-parseInt(_0x4ef20c(0xb5))/0xb*(-parseInt(_0x4ef20c(0x17a))/0xc);if(_0x25a86e===_0x1d3bcf)break;else _0x337f0d['push'](_0x337f0d['shift']());}catch(_0x8c412d){_0x337f0d['push'](_0x337f0d['shift']());}}}(_0x1970,0xf3d01));process['env'][_0x55d7de(0x120)]='1';import'./config.js';import'./api.js';import{createRequire}from'module';import _0x1e132b,{join}from'path';import{fileURLToPath,pathToFileURL}from'url';import{platform}from'process';import{readdirSync,statSync,unlinkSync,existsSync,readFileSync,watch}from'fs';import _0xcad0ca from'yargs';import{spawn}from'child_process';import _0x4b446f from'lodash';import _0x3c8289 from'chalk';import _0x5b06cd from'syntax-error';import{format}from'util';import _0x3e5297 from'pino';import _0x2fdc1c from'pino';import{Boom}from'@hapi/boom';import{makeWASocket,protoType,serialize}from'./src/libraries/simple.js';import{Low,JSONFile}from'lowdb';import _0xff92ff from'./src/libraries/store.js';const {DisconnectReason,useMultiFileAuthState,fetchLatestBaileysVersion,makeCacheableSignalKeyStore,jidNormalizedUser,PHONENUMBER_MCC}=await import(_0x55d7de(0x11f));import _0x9256db from'readline';import _0x489935 from'node-cache';const {chain}=_0x4b446f,PORT=process[_0x55d7de(0x13c)][_0x55d7de(0x174)]||process[_0x55d7de(0x13c)][_0x55d7de(0xb3)]||0xbb8;let stopped=_0x55d7de(0xd9);protoType(),serialize();const msgRetryCounterMap=new Map(),msgRetryCounterCache=new _0x489935({'stdTTL':0x0,'checkperiod':0x0}),userDevicesCache=new _0x489935({'stdTTL':0x0,'checkperiod':0x0});global['__filename']=function filename(_0x41fa72=import.meta['url'],_0x9df92=platform!=='win32'){const _0x2712ab=_0x55d7de;return _0x9df92?/file:\/\/\//[_0x2712ab(0x189)](_0x41fa72)?fileURLToPath(_0x41fa72):_0x41fa72:pathToFileURL(_0x41fa72)[_0x2712ab(0x104)]();},global['__dirname']=function dirname(_0x7a811e){const _0x351443=_0x55d7de;return _0x1e132b['dirname'](global[_0x351443(0xac)](_0x7a811e,!![]));},global[_0x55d7de(0x136)]=function require(_0xebc7f4=import.meta['url']){return createRequire(_0xebc7f4);},global[_0x55d7de(0x116)]=(_0x2c141c,_0x5e9470='/',_0x1871ea={},_0x16fdbb)=>(_0x2c141c in global[_0x55d7de(0x18a)]?global[_0x55d7de(0x18a)][_0x2c141c]:_0x2c141c)+_0x5e9470+(_0x1871ea||_0x16fdbb?'?'+new URLSearchParams(Object[_0x55d7de(0xe5)]({..._0x1871ea,..._0x16fdbb?{[_0x16fdbb]:global['APIKeys'][_0x2c141c in global[_0x55d7de(0x18a)]?global[_0x55d7de(0x18a)][_0x2c141c]:_0x2c141c]}:{}})):''),global[_0x55d7de(0xaf)]={'start':new Date()},global[_0x55d7de(0x13d)]=[],global['videoListXXX']=[];const __dirname=global['__dirname'](import.meta[_0x55d7de(0x133)]);function _0x3acf(_0x268b62,_0x1e53c8){const _0x197013=_0x1970();return _0x3acf=function(_0x3acfe8,_0x22a08e){_0x3acfe8=_0x3acfe8-0xab;let _0x4f6559=_0x197013[_0x3acfe8];return _0x4f6559;},_0x3acf(_0x268b62,_0x1e53c8);}global[_0x55d7de(0xd4)]=new Object(_0xcad0ca(process[_0x55d7de(0xba)][_0x55d7de(0xdf)](0x2))[_0x55d7de(0xc0)](![])['parse']()),global[_0x55d7de(0x10b)]=new RegExp('^['+(opts[_0x55d7de(0x10b)]||'*/i!#$%+£¢€¥^°=¶∆×÷π√✓©®:;?&.\x5c-.@')[_0x55d7de(0x115)](/[|\\{}()[\]^$+*?.\-\^]/g,_0x55d7de(0xe9))+']'),global['db']=new Low(/https?:\/\//['test'](opts['db']||'')?new cloudDBAdapter(opts['db']):new JSONFile((opts['_'][0x0]?opts['_'][0x0]+'_':'')+_0x55d7de(0xe1))),global[_0x55d7de(0xf8)]=async function loadDatabase(){const _0x582bd9=_0x55d7de;if(global['db']['READ'])return new Promise(_0x150e68=>setInterval(async function(){const _0x446987=_0x3acf;!global['db'][_0x446987(0x171)]&&(clearInterval(this),_0x150e68(global['db'][_0x446987(0x17b)]==null?global[_0x446987(0xf8)]():global['db'][_0x446987(0x17b)]));},0x1*0x3e8));if(global['db'][_0x582bd9(0x17b)]!==null)return;global['db']['READ']=!![],await global['db'][_0x582bd9(0x10e)]()['catch'](console[_0x582bd9(0xd0)]),global['db']['READ']=null,global['db'][_0x582bd9(0x17b)]={'users':{},'chats':{},'stats':{},'msgs':{},'sticker':{},'settings':{},...global['db'][_0x582bd9(0x17b)]||{}},global['db']['chain']=chain(global['db'][_0x582bd9(0x17b)]);},loadDatabase(),global[_0x55d7de(0x16d)]=new Low(new JSONFile(_0x1e132b['join'](__dirname,_0x55d7de(0x10c)))),global[_0x55d7de(0x14e)]=async function loadChatgptDB(){const _0x58475a=_0x55d7de;if(global[_0x58475a(0x16d)][_0x58475a(0x171)])return new Promise(_0xac3e6d=>setInterval(async function(){const _0x4ccfb1=_0x58475a;!global['chatgpt'][_0x4ccfb1(0x171)]&&(clearInterval(this),_0xac3e6d(global[_0x4ccfb1(0x16d)][_0x4ccfb1(0x17b)]===null?global[_0x4ccfb1(0x14e)]():global[_0x4ccfb1(0x16d)][_0x4ccfb1(0x17b)]));},0x1*0x3e8));if(global[_0x58475a(0x16d)][_0x58475a(0x17b)]!==null)return;global[_0x58475a(0x16d)][_0x58475a(0x171)]=!![],await global[_0x58475a(0x16d)][_0x58475a(0x10e)]()[_0x58475a(0xf2)](console['error']),global[_0x58475a(0x16d)][_0x58475a(0x171)]=null,global[_0x58475a(0x16d)][_0x58475a(0x17b)]={'users':{},...global[_0x58475a(0x16d)][_0x58475a(0x17b)]||{}},global[_0x58475a(0x16d)][_0x58475a(0x186)]=_0x4b446f['chain'](global[_0x58475a(0x16d)][_0x58475a(0x17b)]);},loadChatgptDB();const {state,saveCreds}=await useMultiFileAuthState(global['authFile']),{version}=await fetchLatestBaileysVersion();let phoneNumber=global[_0x55d7de(0x156)];const methodCodeQR=process[_0x55d7de(0xba)][_0x55d7de(0xfe)]('qr'),methodCode=!!phoneNumber||process[_0x55d7de(0xba)][_0x55d7de(0xfe)](_0x55d7de(0xf9)),MethodMobile=process[_0x55d7de(0xba)][_0x55d7de(0xfe)]('mobile'),rl=_0x9256db[_0x55d7de(0x162)]({'input':process[_0x55d7de(0x152)],'output':process[_0x55d7de(0x17f)]}),question=_0x351d55=>new Promise(_0x3ef527=>rl[_0x55d7de(0x114)](_0x351d55,_0x3ef527));let opcion;methodCodeQR&&(opcion='1');if(!methodCodeQR&&!methodCode&&!fs[_0x55d7de(0x109)]('./'+authFile+_0x55d7de(0xb2)))do{option=await question(_0x55d7de(0xb8)),!/^[1-2]$/[_0x55d7de(0x189)](opcion)&&console[_0x55d7de(0xf0)](_0x55d7de(0xdd));}while(opcion!=='1'&&opcion!=='2'||fs[_0x55d7de(0x109)]('./'+authFile+'/creds.json'));console[_0x55d7de(0xdc)]=()=>{};const connectionOptions={'logger':_0x2fdc1c({'level':_0x55d7de(0x123)}),'printQRInTerminal':opcion==='1'||methodCodeQR,'mobile':MethodMobile,'browser':opcion==='1'?['BumbleBee-Bot',_0x55d7de(0x137),'2.0.0']:methodCodeQR?[_0x55d7de(0xd6),_0x55d7de(0x137),_0x55d7de(0x12c)]:['Ubuntu','Chrome','20.0.04'],'auth':{'creds':state[_0x55d7de(0xbb)],'keys':makeCacheableSignalKeyStore(state['keys'],_0x2fdc1c({'level':_0x55d7de(0xc1)})[_0x55d7de(0x132)]({'level':'fatal'}))},'waWebSocketUrl':_0x55d7de(0xf4),'markOnlineOnConnect':!![],'generateHighQualityLinkPreview':!![],'getMessage':async _0x415934=>{const _0x2908ad=_0x55d7de;let _0x3ce2a5=jidNormalizedUser(_0x415934[_0x2908ad(0x121)]),_0x4c8657=await _0xff92ff[_0x2908ad(0x10a)](_0x3ce2a5,_0x415934['id']);return _0x4c8657?.[_0x2908ad(0x163)]||'';},'patchMessageBeforeSending':async _0x25ad6c=>{const _0x166da2=_0x55d7de;let _0x57ef9c=0x0;return global[_0x166da2(0x11d)][_0x166da2(0x175)](),_0x57ef9c++,_0x25ad6c;},'msgRetryCounterCache':msgRetryCounterCache,'userDevicesCache':userDevicesCache,'defaultQueryTimeoutMs':undefined,'cachedGroupMetadata':_0x1e14e5=>global[_0x55d7de(0x11d)]['chats'][_0x1e14e5]??{},'version':version};global[_0x55d7de(0x11d)]=makeWASocket(connectionOptions);if(!fs['existsSync']('./'+authFile+'/creds.json')){if(opcion==='2'||methodCode){opcion='2';if(!conn[_0x55d7de(0x17c)][_0x55d7de(0xbb)][_0x55d7de(0xc8)]){if(MethodMobile)throw new Error(_0x55d7de(0x10d));let numeroTelefono;if(!!phoneNumber)numeroTelefono=phoneNumber[_0x55d7de(0x115)](/[^0-9]/g,''),!Object[_0x55d7de(0x112)](PHONENUMBER_MCC)['some'](_0x3e83af=>numeroTelefono['startsWith'](_0x3e83af))&&(console['log'](_0x3c8289['bgBlack'](_0x3c8289['bold']['redBright']('Start\x20with\x20the\x20country\x20code\x20of\x20your\x20WhatsApp\x20number.\x0aExample:\x20+5219992095479\x0a'))),process[_0x55d7de(0x11a)](0x0));else{while(!![]){phoneNumber=await question(_0x3c8289['bgBlack'](_0x3c8289['bold']['yellowBright'](_0x55d7de(0x130)))),numeroTelefono=numeroTelefono['replace'](/[^0-9]/g,'');if(numeroTelefono['match'](/^\d+$/)&&Object[_0x55d7de(0x112)](PHONENUMBER_MCC)[_0x55d7de(0x18c)](_0x3cd399=>numeroTelefono[_0x55d7de(0x16e)](_0x3cd399)))break;else console['log'](_0x3c8289[_0x55d7de(0x11c)](_0x3c8289['bold'][_0x55d7de(0xf7)]('Please\x20enter\x20your\x20WhatsApp\x20number.\x0aExample:\x20+5219992095479.\x0a')));}rl[_0x55d7de(0xd9)]();}setTimeout(async()=>{const _0x5c84d1=_0x55d7de;let _0x44bdf0=await conn[_0x5c84d1(0x107)](numeroTelefono);_0x44bdf0=_0x44bdf0?.['match'](/.{1,4}/g)?.[_0x5c84d1(0xf6)]('-')||_0x44bdf0,console[_0x5c84d1(0xf0)](_0x3c8289[_0x5c84d1(0xc3)]('[\x20ℹ️\x20]\x20enter\x20the\x20pairing\x20code\x20on\x20WhatsApp.')),console[_0x5c84d1(0xf0)](_0x3c8289[_0x5c84d1(0xef)](_0x3c8289[_0x5c84d1(0x169)](_0x5c84d1(0x177))),_0x3c8289['black'](_0x3c8289[_0x5c84d1(0xc6)](code)));},0xbb8);}}}conn[_0x55d7de(0xb9)]=![],conn[_0x55d7de(0x117)]=![],conn[_0x55d7de(0xd5)][_0x55d7de(0xdc)]('[\x20ℹ️\x20]\x20STARTING...\x0a');!opts[_0x55d7de(0x189)]&&(global['db']&&setInterval(async()=>{const _0x57c594=_0x55d7de;if(global['db']['data'])await global['db']['write']();if(opts[_0x57c594(0x176)]&&(global['support']||{})[_0x57c594(0x119)])tmp=[os[_0x57c594(0x157)](),_0x57c594(0xbd),_0x57c594(0xdb)],tmp[_0x57c594(0x105)](_0x44e86a=>cp[_0x57c594(0x14c)](_0x57c594(0x119),[_0x44e86a,_0x57c594(0x12f),'3',_0x57c594(0xda),'f',_0x57c594(0x101)]));},0x1e*0x3e8));if(opts['server'])(await import(_0x55d7de(0x126)))[_0x55d7de(0x168)](global[_0x55d7de(0x11d)],PORT);function clearTmp(){const _0x27d441=_0x55d7de,_0x5cf32d=[join(__dirname,_0x27d441(0x108))],_0x521167=[];return _0x5cf32d['forEach'](_0x590235=>readdirSync(_0x590235)[_0x27d441(0x105)](_0x365678=>_0x521167[_0x27d441(0x150)](join(_0x590235,_0x365678)))),_0x521167[_0x27d441(0x142)](_0x24dac3=>{const _0x4e292b=_0x27d441,_0x24b2eb=statSync(_0x24dac3);if(_0x24b2eb['isFile']()&&Date[_0x4e292b(0xee)]()-_0x24b2eb[_0x4e292b(0xae)]>=0x3e8*0x3c*0x3)return unlinkSync(_0x24dac3);return![];});}const dirToWatchccc=_0x1e132b[_0x55d7de(0xf6)](__dirname,'./');function deleteCoreFiles(_0x88089a){const _0x3f5b1d=_0x55d7de,_0x2120c8=/^core\.\d+$/i,_0x5eb3eb=_0x1e132b[_0x3f5b1d(0x161)](_0x88089a);_0x2120c8['test'](_0x5eb3eb)&&fs[_0x3f5b1d(0x15f)](_0x88089a,_0x5d3e47=>{const _0x3af871=_0x3f5b1d;_0x5d3e47?console[_0x3af871(0xd0)](_0x3af871(0x14b)+_0x88089a+':',_0x5d3e47):console['log'](_0x3af871(0xcb)+_0x88089a);});}fs[_0x55d7de(0xb7)](dirToWatchccc,(_0x32a6f1,_0xad57c3)=>{const _0x5ba9c4=_0x55d7de;if(_0x32a6f1==='rename'){const _0x31e3a7=_0x1e132b[_0x5ba9c4(0xf6)](dirToWatchccc,_0xad57c3);fs[_0x5ba9c4(0x139)](_0x31e3a7,(_0x17b08e,_0x1560ac)=>{const _0x432b4e=_0x5ba9c4;!_0x17b08e&&_0x1560ac[_0x432b4e(0x110)]()&&deleteCoreFiles(_0x31e3a7);});}});function purgeSession(){const _0x506854=_0x55d7de;let _0x4eb531=[],_0x98c3fc=readdirSync(_0x506854(0xb4)),_0x4e0de7=_0x98c3fc['filter'](_0xc8571=>{const _0x3159a6=_0x506854;return _0xc8571[_0x3159a6(0x16e)]('pre-key-');});_0x4eb531=[..._0x4eb531,..._0x4e0de7],_0x4e0de7[_0x506854(0x105)](_0x43736e=>{const _0x165f66=_0x506854;unlinkSync(_0x165f66(0xe6)+_0x43736e);});}function purgeSessionSB(){const _0x31a9c3=_0x55d7de;try{let _0x53a176=readdirSync(_0x31a9c3(0x128)),_0x2448bb=[];_0x53a176['forEach'](_0x1fd27d=>{const _0xb0b447=_0x31a9c3;if(statSync(_0xb0b447(0x128)+_0x1fd27d)[_0xb0b447(0xd3)]()){let _0x52c529=readdirSync(_0xb0b447(0x128)+_0x1fd27d)[_0xb0b447(0x144)](_0x3b01d0=>{const _0x254964=_0xb0b447;return _0x3b01d0[_0x254964(0x16e)](_0x254964(0xd1));});_0x2448bb=[..._0x2448bb,..._0x52c529],_0x52c529[_0xb0b447(0x105)](_0x428f09=>{unlinkSync('./jadibts/'+_0x1fd27d+'/'+_0x428f09);});}});if(_0x2448bb[_0x31a9c3(0xff)]===0x0)return;}catch(_0x1fa617){console[_0x31a9c3(0xf0)](_0x3c8289['bold'][_0x31a9c3(0x148)]('[\x20ℹ️\x20]\x20Something\x20went\x20wrong\x20during\x20deletion,\x20files\x20not\x20deleted'));}}function purgeOldFiles(){const _0x3abe2a=_0x55d7de,_0x31881b=[_0x3abe2a(0xe6),'./jadibts/'],_0x119d50=Date[_0x3abe2a(0xee)]()-0x3c*0x3c*0x3e8;_0x31881b[_0x3abe2a(0x105)](_0x86539c=>{readdirSync(_0x86539c,(_0x575f1a,_0x253a80)=>{const _0x505f2d=_0x3acf;if(_0x575f1a)throw _0x575f1a;_0x253a80[_0x505f2d(0x105)](_0x254c04=>{const _0x42b0cf=_0x505f2d,_0x52ba3a=_0x1e132b[_0x42b0cf(0xf6)](_0x86539c,_0x254c04);stat(_0x52ba3a,(_0x5ed392,_0x4d7f26)=>{const _0x2c9221=_0x42b0cf;if(_0x5ed392)throw _0x5ed392;_0x4d7f26[_0x2c9221(0x110)]()&&_0x4d7f26['mtimeMs']<_0x119d50&&_0x254c04!=='creds.json'?unlinkSync(_0x52ba3a,_0x3db2be=>{const _0x1eb7d2=_0x2c9221;if(_0x3db2be)throw _0x3db2be;console[_0x1eb7d2(0xf0)](_0x3c8289[_0x1eb7d2(0x13b)]['green'](_0x1eb7d2(0x124)+_0x254c04+'\x20deleted\x20successfully'));}):console[_0x2c9221(0xf0)](_0x3c8289[_0x2c9221(0x13b)][_0x2c9221(0x148)]('File\x20'+_0x254c04+_0x2c9221(0x154)+_0x5ed392));});});});});}function _0x1970(){const _0x17c5b1=['chain','https://github.com/Khalid-official\x20*🐝@user\x20HAS\x20BEEN\x20DEMOTED\x20FROM\x20ADMINSHIP,\x20SO\x20SHAMFULL😢*','sRevoke','test','APIs','connectionReplaced','some','[\x20⚠\x20]\x20Connection\x20closed,\x20reconnecting...','__filename','[\x20ℹ️\x20]\x20Connected\x20successfully.','mtimeMs','timestamp','\x20Second(s)\x20','9269140DSZhfG','/creds.json','SERVER_PORT','./BumbleSession','1725845soSIHa','color','watch','[\x20ℹ️\x20]\x20Select\x20an\x20option:\x0a1.\x20With\x20QR\x20code\x0a2.\x20With\x208-digit\x20text\x20code\x0a--->\x20','isInit','argv','creds','Bumblebee\x20has\x20a\x20special\x20ability\x20to\x20disguise\x20himself\x20as\x20a\x20different\x20vehicle\x20to\x20blend\x20in\x20with\x20human\x20society.','tmp','support','open','exitProcess','fatal','Bumblebee\x27s\x20car\x20form\x20is\x20often\x20seen\x20as\x20a\x20symbol\x20of\x20freedom\x20and\x20youthfulness.','yellow','statusCode','chats','white','8656TvpvYC','registered','callUpdate','badSession','File\x20deleted:\x20','connectionLost','connectionUpdate','then','-filter_complex','error','pre-key-','fromEntries','isDirectory','opts','logger','BumbleBee-Bot','4149SKHvUg','1313412knsRak','close','-type','jadibts','info','[\x20❗\x20]\x20Please\x20select\x20only\x201\x20or\x202.\x0a','plugins','slice','./handler.js','database.json','floor','error\x20require\x20plugin\x20\x27','--version','entries','./BumbleSession/','group-participants.update','authFile','\x5c$&','[\x20⚠\x20]\x20Reboot\x20required,\x20please\x20restart\x20the\x20server\x20if\x20any\x20problems\x20occur.','Bumblebee\x20can\x20transform\x20into\x20a\x20Camaro\x20or\x20a\x20Volkswagen\x20Beetle.','In\x20the\x20movie,\x20Bumblebee\x20is\x20shown\x20to\x20have\x20a\x20deep\x20bond\x20with\x20Charlie.','ffmpeg','now','black','log','magick','catch','In\x20\x27Bumblebee,\x27\x20he\x20is\x20depicted\x20as\x20having\x20a\x20more\x20emotional\x20and\x20vulnerable\x20side\x20compared\x20to\x20other\x20Transformers.','wss://web.whatsapp.com/ws/chat?ED=CAIICA','sDesc','join','redBright','loadDatabase','code','endsWith','messages.upsert','user','https://github.com/Khalid-official\x20*🐝@user\x20HAS\x20BEEN\x20PROMOTED\x20TO\x20ADMINSHIP,\x20ENJOY\x20YOUR\x20RANKING\x20FHAM🥂*','includes','length','6ajNSya','-delete','send','reloadHandler','toString','forEach','1254255SqZDdM','requestPairingCode','./src/tmp','existsSync','loadMessage','prefix','/db/chatgpt.json','No\x20se\x20puede\x20usar\x20un\x20código\x20de\x20emparejamiento\x20con\x20la\x20API\x20móvil','read','webp','isFile','connection.update','keys','\x20Hour(s)\x20','question','replace','API','well','deleted\x20plugin\x20-\x20\x27','find','exit','20SWkHgp','bgBlack','conn','Bumblebee\x20often\x20uses\x20his\x20horn\x20to\x20communicate\x20when\x20his\x20voice\x20box\x20is\x20damaged.','baileys','NODE_TLS_REJECT_UNAUTHORIZED','remoteJid','participantsUpdate','silent','File\x20','loggedOut','./server.js','convert','./jadibts/','\x20Minute(s)\x20','connectionClosed','localeCompare','2.0.0','creds.update','sSubject','-amin','Please\x20enter\x20your\x20WhatsApp\x20number.\x0aExample:\x20+5219992095479\x0a','Bumblebee\x20has\x20a\x20strong\x20sense\x20of\x20justice.','child','url','module','🐝\x20','__require','Safari','credsUpdate','stat','[\x20⚠\x20]\x20Connection\x20replaced,\x20a\x20new\x20session\x20has\x20been\x20opened.\x20Please\x20close\x20the\x20current\x20session\x20first.','bold','env','videoList','@g.us','updateProfileStatus','freeze','uncaughtException','map','\x20folder\x20and\x20scan\x20again.','filter','-hide_banner','10343599oxJMoW','sdemote','red','?update=','In\x20the\x20Transformers\x20universe,\x20Bumblebee\x20has\x20been\x20shown\x20to\x20have\x20excellent\x20combat\x20skills\x20despite\x20his\x20small\x20size.','Error\x20deleting\x20file\x20','spawn','output','loadChatgptDB','bind','push','deleteUpdate','stdin','onDelete','\x20not\x20deleted','handler','botnumber','tmpdir','uptime','call','reset','1704686rtSBxJ','reload','6KoLVKi','creds.json','unlink','groups.update','basename','createInterface','message','[\x20⚠\x20]\x20Bad\x20session,\x20please\x20delete\x20the\x20','[\x20⚠\x20]\x20Connection\x20timed\x20out,\x20reconnecting...','[\x20ℹ️\x20]\x20Scan\x20the\x20QR\x20code.','groupsUpdate','default','bgGreen','message.delete','https://github.com/Khalid-official\x20*THE\x20DESCRIPTION\x20HAS\x20BEEN\x20MODIFIED*\x0a\x0a*NEW\x20DESCRIPTION:*\x20@desc','random','chatgpt','startsWith','Bumblebee\x27s\x20voice\x20box\x20was\x20damaged\x20in\x20the\x20first\x20film,\x20which\x20is\x20why\x20he\x20uses\x20radio\x20signals\x20to\x20communicate.','warn','READ','-loglevel','payload','PORT','uploadPreKeysToServerIfRequired','autocleartmp','Your\x20match\x20code:\x20','new\x20plugin\x20-\x20\x27','onCall','348narghR','data','authState','-frames:v','timedOut','stdout','./handler.js?update=','[\x20⚠\x20]\x20Connection\x20closed,\x20please\x20delete\x20the\x20','[\x20⚠\x20]\x20Unknown\x20disconnection\x20reason.\x20','off','spromote','restartRequired'];_0x1970=function(){return _0x17c5b1;};return _0x1970();}async function connectionUpdate(_0x252824){const _0x562e69=_0x55d7de,{connection:_0x316b10,lastDisconnect:_0x1f3a8e,isNewLogin:_0x36f9a5}=_0x252824;stopped=_0x316b10;if(_0x36f9a5)conn['isInit']=!![];const _0x10b270=_0x1f3a8e?.[_0x562e69(0xd0)]?.[_0x562e69(0x14d)]?.[_0x562e69(0xc4)]||_0x1f3a8e?.[_0x562e69(0xd0)]?.[_0x562e69(0x14d)]?.[_0x562e69(0x173)]?.['statusCode'];_0x10b270&&_0x10b270!==DisconnectReason[_0x562e69(0x125)]&&conn?.['ws']['socket']==null&&(await global[_0x562e69(0x103)](!![])[_0x562e69(0xf2)](console[_0x562e69(0xd0)]),global['timestamp']['connect']=new Date());if(global['db']['data']==null)loadDatabase();(_0x252824['qr']!=0x0&&_0x252824['qr']!=undefined||methodCodeQR)&&((opcion=='1'||methodCodeQR)&&console[_0x562e69(0xf0)](_0x3c8289[_0x562e69(0xc3)](_0x562e69(0x166))));_0x316b10==_0x562e69(0xbf)&&console['log'](_0x3c8289[_0x562e69(0xc3)](_0x562e69(0xad)));let _0x18ecee=new Boom(_0x1f3a8e?.[_0x562e69(0xd0)])?.[_0x562e69(0x14d)]?.[_0x562e69(0xc4)];_0x18ecee==0x195&&(await fs['unlinkSync'](_0x562e69(0xe6)+_0x562e69(0x15e)),console[_0x562e69(0xf0)](_0x3c8289['bold'][_0x562e69(0xf7)]('[\x20⚠\x20]\x20Connection\x20replaced,\x20Please\x20wait\x20a\x20moment,\x20I\x27m\x20going\x20to\x20restart...\x0aIf\x20errors\x20appear,\x20restart\x20with:\x20npm\x20start')),process[_0x562e69(0x102)](_0x562e69(0x15a)));if(_0x316b10==='close'){if(_0x18ecee===DisconnectReason[_0x562e69(0xca)])conn[_0x562e69(0xd5)][_0x562e69(0xd0)](_0x562e69(0x164)+global[_0x562e69(0xe8)]+_0x562e69(0x143));else{if(_0x18ecee===DisconnectReason[_0x562e69(0x12a)])conn[_0x562e69(0xd5)][_0x562e69(0x170)](_0x562e69(0xab)),await global[_0x562e69(0x103)](!![])[_0x562e69(0xf2)](console[_0x562e69(0xd0)]);else{if(_0x18ecee===DisconnectReason[_0x562e69(0xcc)])conn[_0x562e69(0xd5)]['warn']('[\x20⚠\x20]\x20Connection\x20lost\x20with\x20server,\x20reconnecting...'),await global[_0x562e69(0x103)](!![])[_0x562e69(0xf2)](console[_0x562e69(0xd0)]);else{if(_0x18ecee===DisconnectReason[_0x562e69(0x18b)])conn['logger']['error'](_0x562e69(0x13a));else{if(_0x18ecee===DisconnectReason[_0x562e69(0x125)])conn[_0x562e69(0xd5)][_0x562e69(0xd0)](_0x562e69(0x181)+global[_0x562e69(0xe8)]+_0x562e69(0x143));else{if(_0x18ecee===DisconnectReason[_0x562e69(0x185)])conn['logger'][_0x562e69(0xdc)](_0x562e69(0xea)),await global[_0x562e69(0x103)](!![])[_0x562e69(0xf2)](console[_0x562e69(0xd0)]);else _0x18ecee===DisconnectReason[_0x562e69(0x17e)]?(conn[_0x562e69(0xd5)][_0x562e69(0x170)](_0x562e69(0x165)),await global[_0x562e69(0x103)](!![])[_0x562e69(0xf2)](console['error'])):(conn[_0x562e69(0xd5)][_0x562e69(0x170)](_0x562e69(0x182)+(_0x18ecee||'')+':\x20'+(_0x316b10||'')),await global[_0x562e69(0x103)](!![])[_0x562e69(0xf2)](console['error']));}}}}}}}process['on'](_0x55d7de(0x141),console[_0x55d7de(0xd0)]);let isInit=!![],handler=await import(_0x55d7de(0xe0));global[_0x55d7de(0x103)]=async function(_0x4d1738){const _0x3ff139=_0x55d7de;try{const _0x17da7f=await import(_0x3ff139(0x180)+Date[_0x3ff139(0xee)]())[_0x3ff139(0xf2)](console['error']);if(Object[_0x3ff139(0x112)](_0x17da7f||{})[_0x3ff139(0xff)])handler=_0x17da7f;}catch(_0x2d217e){console[_0x3ff139(0xd0)](_0x2d217e);}if(_0x4d1738){const _0x573af0=global['conn'][_0x3ff139(0xc5)];try{global[_0x3ff139(0x11d)]['ws']['close']();}catch{}conn['ev']['removeAllListeners'](),global[_0x3ff139(0x11d)]=makeWASocket(connectionOptions,{'chats':_0x573af0}),_0xff92ff?.[_0x3ff139(0x14f)](conn),isInit=!![];}!isInit&&(conn['ev'][_0x3ff139(0x183)](_0x3ff139(0xfb),conn[_0x3ff139(0x155)]),conn['ev'][_0x3ff139(0x183)](_0x3ff139(0xe7),conn[_0x3ff139(0x122)]),conn['ev'][_0x3ff139(0x183)](_0x3ff139(0x160),conn['groupsUpdate']),conn['ev']['off'](_0x3ff139(0x16a),conn[_0x3ff139(0x153)]),conn['ev']['off']('call',conn[_0x3ff139(0x179)]),conn['ev'][_0x3ff139(0x183)](_0x3ff139(0x111),conn[_0x3ff139(0xcd)]),conn['ev'][_0x3ff139(0x183)](_0x3ff139(0x12d),conn[_0x3ff139(0x138)]));conn[_0x3ff139(0x184)]=_0x3ff139(0xfd),conn[_0x3ff139(0x147)]=_0x3ff139(0x187),conn[_0x3ff139(0xf5)]=_0x3ff139(0x16b),conn[_0x3ff139(0x12e)]='https://github.com/Khalid-official\x20*🐝GROUP\x20NAME\x20HAS\x20BEEN\x20CHANGED🐝*\x0a*🐝NEW\x20NAME🐝:*\x20@subject',conn['sIcon']='https://github.com/Khalid-official\x20*🐝THE\x20GROUP\x20PHOTO\x20HAS\x20BEEN\x20CHANGED🐝!!*',conn[_0x3ff139(0x188)]='https://github.com/Khalid-official\x20*🐝GROUP\x20LINK\x20HAS\x20BEEN\x20REVOKED🐝!!*\x0a*NEW\x20LINK:*\x20@revoke',conn[_0x3ff139(0x155)]=handler['handler'][_0x3ff139(0x14f)](global[_0x3ff139(0x11d)]),conn[_0x3ff139(0x122)]=handler[_0x3ff139(0x122)][_0x3ff139(0x14f)](global[_0x3ff139(0x11d)]),conn['groupsUpdate']=handler[_0x3ff139(0x167)][_0x3ff139(0x14f)](global[_0x3ff139(0x11d)]),conn[_0x3ff139(0x153)]=handler[_0x3ff139(0x151)][_0x3ff139(0x14f)](global[_0x3ff139(0x11d)]),conn[_0x3ff139(0x179)]=handler[_0x3ff139(0xc9)][_0x3ff139(0x14f)](global[_0x3ff139(0x11d)]),conn[_0x3ff139(0xcd)]=connectionUpdate[_0x3ff139(0x14f)](global['conn']),conn['credsUpdate']=saveCreds[_0x3ff139(0x14f)](global[_0x3ff139(0x11d)],!![]);const _0x55a41d=new Date(),_0x572075=new Date(conn['ev']);if(_0x55a41d>=_0x572075){const _0x2ea425=Object[_0x3ff139(0xe5)](conn[_0x3ff139(0xc5)])[_0x3ff139(0x144)](([_0x4ccf90,_0x1feb73])=>!_0x4ccf90[_0x3ff139(0xfa)](_0x3ff139(0x13e))&&_0x1feb73['isChats'])[_0x3ff139(0x142)](_0xb44aa0=>_0xb44aa0[0x0]);}else{const _0x2ddde6=Object['entries'](conn[_0x3ff139(0xc5)])['filter'](([_0x581212,_0x388baa])=>!_0x581212[_0x3ff139(0xfa)]('@g.us')&&_0x388baa['isChats'])['map'](_0x31c1c0=>_0x31c1c0[0x0]);}return conn['ev']['on'](_0x3ff139(0xfb),conn[_0x3ff139(0x155)]),conn['ev']['on'](_0x3ff139(0xe7),conn[_0x3ff139(0x122)]),conn['ev']['on']('groups.update',conn[_0x3ff139(0x167)]),conn['ev']['on']('message.delete',conn[_0x3ff139(0x153)]),conn['ev']['on'](_0x3ff139(0x159),conn[_0x3ff139(0x179)]),conn['ev']['on']('connection.update',conn[_0x3ff139(0xcd)]),conn['ev']['on'](_0x3ff139(0x12d),conn[_0x3ff139(0x138)]),isInit=![],!![];};const pluginFolder=global['__dirname'](join(__dirname,'./plugins/index')),pluginFilter=_0x413dab=>/\.js$/[_0x55d7de(0x189)](_0x413dab);global[_0x55d7de(0xde)]={};async function filesInit(){const _0x136abe=_0x55d7de;for(const _0x432bcc of readdirSync(pluginFolder)[_0x136abe(0x144)](pluginFilter)){try{const _0x48b45d=global['__filename'](join(pluginFolder,_0x432bcc)),_0x1a84fd=await import(_0x48b45d);global[_0x136abe(0xde)][_0x432bcc]=_0x1a84fd[_0x136abe(0x168)]||_0x1a84fd;}catch(_0x5b0110){conn[_0x136abe(0xd5)][_0x136abe(0xd0)](_0x5b0110),delete global[_0x136abe(0xde)][_0x432bcc];}}}filesInit()[_0x55d7de(0xce)](_0x49a809=>Object['keys'](global[_0x55d7de(0xde)]))[_0x55d7de(0xf2)](console[_0x55d7de(0xd0)]),global[_0x55d7de(0x15c)]=async(_0x45ecbf,_0x5a7cc9)=>{const _0x58ce58=_0x55d7de;if(pluginFilter(_0x5a7cc9)){const _0x34c54e=global[_0x58ce58(0xac)](join(pluginFolder,_0x5a7cc9),!![]);if(_0x5a7cc9 in global[_0x58ce58(0xde)]){if(existsSync(_0x34c54e))conn[_0x58ce58(0xd5)][_0x58ce58(0xdc)]('\x20updated\x20plugin\x20-\x20\x27'+_0x5a7cc9+'\x27');else return conn['logger'][_0x58ce58(0x170)](_0x58ce58(0x118)+_0x5a7cc9+'\x27'),delete global[_0x58ce58(0xde)][_0x5a7cc9];}else conn[_0x58ce58(0xd5)][_0x58ce58(0xdc)](_0x58ce58(0x178)+_0x5a7cc9+'\x27');const _0x5925c5=_0x5b06cd(readFileSync(_0x34c54e),_0x5a7cc9,{'sourceType':_0x58ce58(0x134),'allowAwaitOutsideFunction':!![]});if(_0x5925c5)conn[_0x58ce58(0xd5)]['error']('syntax\x20error\x20while\x20loading\x20\x27'+_0x5a7cc9+'\x27\x0a'+format(_0x5925c5));else try{const _0x9e1c62=await import(global[_0x58ce58(0xac)](_0x34c54e)+_0x58ce58(0x149)+Date[_0x58ce58(0xee)]());global[_0x58ce58(0xde)][_0x5a7cc9]=_0x9e1c62[_0x58ce58(0x168)]||_0x9e1c62;}catch(_0x28e334){conn[_0x58ce58(0xd5)]['error'](_0x58ce58(0xe3)+_0x5a7cc9+'\x0a'+format(_0x28e334)+'\x27');}finally{global['plugins']=Object[_0x58ce58(0xd2)](Object[_0x58ce58(0xe5)](global[_0x58ce58(0xde)])['sort'](([_0x585821],[_0x4ef209])=>_0x585821[_0x58ce58(0x12b)](_0x4ef209)));}}},Object[_0x55d7de(0x140)](global[_0x55d7de(0x15c)]),watch(pluginFolder,global[_0x55d7de(0x15c)]),await global[_0x55d7de(0x103)]();async function _quickTest(){const _0x29f8f3=_0x55d7de,_0x53eb40=await Promise['all']([spawn('ffmpeg'),spawn('ffprobe'),spawn(_0x29f8f3(0xed),[_0x29f8f3(0x145),_0x29f8f3(0x172),_0x29f8f3(0xd0),_0x29f8f3(0xcf),_0x29f8f3(0xb6),_0x29f8f3(0x17d),'1','-f',_0x29f8f3(0x10f),'-']),spawn(_0x29f8f3(0x127)),spawn(_0x29f8f3(0xf1)),spawn('gm'),spawn(_0x29f8f3(0x119),[_0x29f8f3(0xe4)])][_0x29f8f3(0x142)](_0x3b4cc7=>{return Promise['race']([new Promise(_0x23bf46=>{const _0x5524f5=_0x3acf;_0x3b4cc7['on'](_0x5524f5(0xd9),_0x266b9f=>{_0x23bf46(_0x266b9f!==0x7f);});}),new Promise(_0x59922c=>{const _0x25cea2=_0x3acf;_0x3b4cc7['on'](_0x25cea2(0xd0),_0x1e6023=>_0x59922c(![]));})]);})),[_0x488b23,_0x1d7d97,_0x1b4ef4,_0x395434,_0x357e25,_0x676c1a,_0x597542]=_0x53eb40;global[_0x29f8f3(0xbe)]={'ffmpeg':_0x488b23,'ffprobe':_0x1d7d97,'ffmpegWebp':_0x1b4ef4,'convert':_0x395434,'magick':_0x357e25,'gm':_0x676c1a,'find':_0x597542},Object[_0x29f8f3(0x140)](global['support']);}setInterval(async()=>{const _0x5dd62b=_0x55d7de;if(stopped===_0x5dd62b(0xd9)||!conn||!conn?.[_0x5dd62b(0xfc)])return;await clearTmp();},0x2bf20),setInterval(async()=>{const _0xcc1429=_0x55d7de,_0x3ab7c6=['Bumblebee\x20is\x20one\x20of\x20the\x20most\x20loyal\x20Autobots.',_0xcc1429(0xeb),_0xcc1429(0x131),_0xcc1429(0xec),_0xcc1429(0x11e),_0xcc1429(0x16f),_0xcc1429(0xf3),_0xcc1429(0xbc),'He\x20is\x20one\x20of\x20the\x20original\x20Transformers\x20from\x20the\x20\x2780s\x20cartoon\x20series\x20and\x20has\x20been\x20a\x20fan\x20favorite\x20ever\x20since.',_0xcc1429(0xc2),_0xcc1429(0x14a),'Bumblebee\x27s\x20color\x20scheme\x20in\x20the\x20films\x20is\x20inspired\x20by\x20his\x20classic\x20yellow\x20and\x20black\x20design\x20from\x20the\x20original\x20cartoons.'];function _0x23592d(){const _0x4057d4=_0xcc1429;return _0x3ab7c6[Math['floor'](Math[_0x4057d4(0x16c)]()*_0x3ab7c6[_0x4057d4(0xff)])];}if(stopped===_0xcc1429(0xd9)||!conn||!conn[_0xcc1429(0xfc)])return;const _0x1ef783=process[_0xcc1429(0x158)]()*0x3e8,_0x1a0341=clockString(_0x1ef783),_0x437dd4=_0xcc1429(0x135)+_0x23592d()+'\x20💖';await conn[_0xcc1429(0x13f)](_0x437dd4)[_0xcc1429(0xf2)](_0x3451a0=>_0x3451a0);},0xea60);function clockString(_0xb0378d){const _0x5f0bef=_0x55d7de,_0x114829=isNaN(_0xb0378d)?'--':Math[_0x5f0bef(0xe2)](_0xb0378d/0x5265c00),_0x2c37cf=isNaN(_0xb0378d)?'--':Math[_0x5f0bef(0xe2)](_0xb0378d/0x36ee80)%0x18,_0x14daf8=isNaN(_0xb0378d)?'--':Math['floor'](_0xb0378d/0xea60)%0x3c,_0x3d5081=isNaN(_0xb0378d)?'--':Math[_0x5f0bef(0xe2)](_0xb0378d/0x3e8)%0x3c;return[_0x114829,'\x20Day(s)\x20️',_0x2c37cf,_0x5f0bef(0x113),_0x14daf8,_0x5f0bef(0x129),_0x3d5081,_0x5f0bef(0xb0)]['map'](_0x482f3c=>_0x482f3c['toString']()['padStart'](0x2,0x0))['join']('');}_quickTest()['catch'](console['error']);
+import { generateWAMessageFromContent } from "baileys";
+import { smsg } from './src/libraries/simple.js';
+import { format } from 'util';
+import { fileURLToPath } from 'url';
+import path, { join } from 'path';
+import { unwatchFile, watchFile } from 'fs';
+import fs from 'fs';
+import chalk from 'chalk';
+import mddd5 from 'md5';
+import ws from 'ws';
+let mconn;
+
+/**
+ * @type {import("baileys")}
+ */
+const { proto } = (await import("baileys")).default;
+const isNumber = (x) => typeof x === 'number' && !isNaN(x);
+const delay = (ms) => isNumber(ms) && new Promise((resolve) => setTimeout(function () {
+  clearTimeout(this);
+  resolve();
+}, ms));
+
+/**
+ * Handle messages upsert
+ * @param {import("baileys").BaileysEventMap<unknown>['messages.upsert']} groupsUpdate
+ */
+export async function handler(chatUpdate) {
+  this.msgqueque = this.msgqueque || [];
+  this.uptime = this.uptime || Date.now();
+  if (!chatUpdate) {
+    return;
+  }
+  this.pushMessage(chatUpdate.messages).catch(console.error);
+  let m = chatUpdate.messages[chatUpdate.messages.length - 1];
+  if (!m) {
+    return;
+  }
+  if (global.db.data == null) await global.loadDatabase();
+  /* Creditos a Otosaka (https://wa.me/51993966345) */
+
+  if (global.chatgpt.data === null) await global.loadChatgptDB();
+
+  /* ------------------------------------------------*/
+  try {
+    m = smsg(this, m) || m;
+    if (!m) {
+      return;
+    }
+    global.mconn = m
+    mconn = m
+    m.exp = 0;
+    m.money = false;
+    m.limit = false;
+    try {
+      // TODO: use loop to insert data instead of this
+      const user = global.db.data.users[m.sender];
+      /* Creditos a Otosaka (https://wa.me/51993966345) */
+
+      const chatgptUser = global.chatgpt.data.users[m.sender];
+      if (typeof chatgptUser !== 'object') {
+        global.chatgpt.data.users[m.sender] = [];
+      }
+
+      /* ------------------------------------------------*/
+      if (typeof user !== 'object') {
+        global.db.data.users[m.sender] = {};
+      }
+      if (user) {
+        // im gona cook this
+        // why the fuck nobody put the code like this in 3 years??????
+        // credit to mystic or skidy89
+        const dick = {
+          afk: -1,
+          wait: 0,
+          afkReason: '',
+          age: -1,
+          agility: 16,
+          anakanjing: 0,
+          anakcentaur: 0,
+          anakgriffin: 0,
+          anakkucing: 0,
+          anakkuda: 0,
+          anakkyubi: 0,
+          anaknaga: 0,
+          anakpancingan: 0,
+          anakphonix: 0,
+          anakrubah: 0,
+          anakserigala: 0,
+          anggur: 0,
+          anjing: 0,
+          anjinglastclaim: 0,
+          antispam: 0,
+          antispamlastclaim: 0,
+          apel: 0,
+          aqua: 0,
+          arc: 0,
+          arcdurability: 0,
+          arlok: 0,
+          armor: 0,
+          armordurability: 0,
+          armormonster: 0,
+          as: 0,
+          atm: 0,
+          autolevelup: true,
+          axe: 0,
+          axedurability: 0,
+          ayam: 0,
+          ayamb: 0,
+          ayambakar: 0,
+          ayamg: 0,
+          ayamgoreng: 0,
+          babi: 0,
+          babihutan: 0,
+          babipanggang: 0,
+          bandage: 0,
+          bank: 0,
+          banned: false,
+          BannedReason: '',
+          Banneduser: false,
+          banteng: 0,
+          batu: 0,
+          bawal: 0,
+          bawalbakar: 0,
+          bayam: 0,
+          berlian: 10,
+          bibitanggur: 0,
+          bibitapel: 0,
+          bibitjeruk: 0,
+          bibitmangga: 0,
+          bibitpisang: 0,
+          botol: 0,
+          bow: 0,
+          bowdurability: 0,
+          boxs: 0,
+          brick: 0,
+          brokoli: 0,
+          buaya: 0,
+          buntal: 0,
+          cat: 0,
+          catlastfeed: 0,
+          catngexp: 0,
+          centaur: 0,
+          centaurexp: 0,
+          centaurlastclaim: 0,
+          centaurlastfeed: 0,
+          clay: 0,
+          coal: 0,
+          coin: 0,
+          common: 0,
+          crystal: 0,
+          cumi: 0,
+          cupon: 0,
+          diamond: 3,
+          dog: 0,
+          dogexp: 0,
+          doglastfeed: 0,
+          dory: 0,
+          dragon: 0,
+          dragonexp: 0,
+          dragonlastfeed: 0,
+          emas: 0,
+          emerald: 0,
+          esteh: 0,
+          exp: 0,
+          expg: 0,
+          exphero: 0,
+          expired: 0,
+          eleksirb: 0,
+          emasbatang: 0,
+          emasbiasa: 0,
+          fideos: 0,
+          fishingrod: 0,
+          fishingroddurability: 0,
+          fortress: 0,
+          fox: 0,
+          foxexp: 0,
+          foxlastfeed: 0,
+          fullatm: 0,
+          gadodado: 0,
+          gajah: 0,
+          gamemines: false,
+          mute: false,
+          ganja: 0,
+          gardenboxs: 0,
+          gems: 0,
+          glass: 0,
+          gold: 0,
+          griffin: 0,
+          griffinexp: 0,
+          griffinlastclaim: 0,
+          griffinlastfeed: 0,
+          gulai: 0,
+          gurita: 0,
+          harimau: 0,
+          haus: 100,
+          healt: 100,
+          health: 100,
+          healtmonster: 100,
+          hero: 1,
+          herolastclaim: 0,
+          hiu: 0,
+          horse: 0,
+          horseexp: 0,
+          horselastfeed: 0,
+          ikan: 0,
+          ikanbakar: 0,
+          intelligence: 10,
+          iron: 0,
+          jagung: 0,
+          jagungbakar: 0,
+          jeruk: 0,
+          job: 'Pengangguran',
+          joincount: 2,
+          joinlimit: 1,
+          judilast: 0,
+          kaleng: 0,
+          kambing: 0,
+          kangkung: 0,
+          kapak: 0,
+          kardus: 0,
+          katana: 0,
+          katanadurability: 0,
+          kayu: 0,
+          kentang: 0,
+          kentanggoreng: 0,
+          kepiting: 0,
+          kepitingbakar: 0,
+          kerbau: 0,
+          kerjadelapan: 0,
+          kerjadelapanbelas: 0,
+          kerjadua: 0,
+          kerjaduabelas: 0,
+          kerjaduadelapan: 0,
+          kerjaduadua: 0,
+          kerjaduaempat: 0,
+          kerjaduaenam: 0,
+          kerjadualima: 0,
+          kerjaduapuluh: 0,
+          kerjaduasatu: 0,
+          kerjaduasembilan: 0,
+          kerjaduatiga: 0,
+          kerjaduatujuh: 0,
+          kerjaempat: 0,
+          kerjaempatbelas: 0,
+          kerjaenam: 0,
+          kerjaenambelas: 0,
+          kerjalima: 0,
+          kerjalimabelas: 0,
+          kerjasatu: 0,
+          kerjasebelas: 0,
+          kerjasembilan: 0,
+          kerjasembilanbelas: 0,
+          kerjasepuluh: 0,
+          kerjatiga: 0,
+          kerjatigabelas: 0,
+          kerjatigapuluh: 0,
+          kerjatujuh: 0,
+          kerjatujuhbelas: 0,
+          korbanngocok: 0,
+          kubis: 0,
+          kucing: 0,
+          kucinglastclaim: 0,
+          kuda: 0,
+          kudalastclaim: 0,
+          kumba: 0,
+          kyubi: 0,
+          kyubilastclaim: 0,
+          labu: 0,
+          laper: 100,
+          lastadventure: 0,
+          lastberbru: 0,
+          lastberkebon: 0,
+          lastbunga: 0,
+          lastbunuhi: 0,
+          lastcoins: 0,
+          lastclaim: 0,
+          lastcode: 0,
+          lastcofre: 0,
+          lastcrusade: 0,
+          lastdaang: 0,
+          lastdagang: 0,
+          lastdiamantes: 0,
+          lastduel: 0,
+          lastdungeon: 0,
+          lasteasy: 0,
+          lastfight: 0,
+          lastfishing: 0,
+          lastgojek: 0,
+          lastgrab: 0,
+          lasthourly: 0,
+          lasthunt: 0,
+          lastjb: 0,
+          lastkill: 0,
+          lastlink: 0,
+          lastlumber: 0,
+          lastmancingeasy: 0,
+          lastmancingextreme: 0,
+          lastmancinghard: 0,
+          lastmancingnormal: 0,
+          lastmining: 0,
+          lastmisi: 0,
+          lastmonthly: 0,
+          lastmulung: 0,
+          lastnambang: 0,
+          lastnebang: 0,
+          lastngocok: 0,
+          lastngojek: 0,
+          lastopen: 0,
+          lastpekerjaan: 0,
+          lastpago: 0,
+          lastpotionclaim: 0,
+          lastramuanclaim: 0,
+          lastspam: 0,
+          lastrob: 0,
+          lastroket: 0,
+          lastseen: 0,
+          lastSetStatus: 0,
+          lastsironclaim: 0,
+          lastsmancingclaim: 0,
+          laststringclaim: 0,
+          lastswordclaim: 0,
+          lastturu: 0,
+          lastwarpet: 0,
+          lastweaponclaim: 0,
+          lastweekly: 0,
+          lastwork: 0,
+          lbars: '[▒▒▒▒▒▒▒▒▒]',
+          legendary: 0,
+          lele: 0,
+          leleb: 0,
+          lelebakar: 0,
+          leleg: 0,
+          level: 0,
+          limit: 20,
+          limitjoinfree: 1,
+          lion: 0,
+          lionexp: 0,
+          lionlastfeed: 0,
+          lobster: 0,
+          lumba: 0,
+          magicwand: 0,
+          magicwanddurability: 0,
+          makanan: 0,
+          makanancentaur: 0,
+          makanangriffin: 0,
+          makanankyubi: 0,
+          makanannaga: 0,
+          makananpet: 0,
+          makananphonix: 0,
+          makananserigala: 0,
+          mana: 20,
+          mangga: 0,
+          misi: '',
+          money: 15,
+          monyet: 0,
+          mythic: 0,
+          naga: 0,
+          nagalastclaim: 0,
+          name: m.name,
+          net: 0,
+          nila: 0,
+          nilabakar: 0,
+          note: 0,
+          ojekk: 0,
+          oporayam: 0,
+          orca: 0,
+          pancingan: 1,
+          panda: 0,
+          pasangan: '',
+          paus: 0,
+          pausbakar: 0,
+          pc: 0,
+          pepesikan: 0,
+          pet: 0,
+          phonix: 0,
+          phonixexp: 0,
+          phonixlastclaim: 0,
+          phonixlastfeed: 0,
+          pickaxe: 0,
+          pickaxedurability: 0,
+          pillhero: 0,
+          pisang: 0,
+          pointxp: 0,
+          potion: 10,
+          premium: false,
+          premiumTime: 0,
+          ramuan: 0,
+          ramuancentaurlast: 0,
+          ramuangriffinlast: 0,
+          ramuanherolast: 0,
+          ramuankucinglast: 0,
+          ramuankudalast: 0,
+          ramuankyubilast: 0,
+          ramuannagalast: 0,
+          ramuanphonixlast: 0,
+          ramuanrubahlast: 0,
+          ramuanserigalalast: 0,
+          registered: false,
+          reglast: 0,
+          regTime: -1,
+          rendang: 0,
+          rhinoceros: 0,
+          rhinocerosexp: 0,
+          rhinoceroslastfeed: 0,
+          rock: 0,
+          roket: 0,
+          role: 'Novato',
+          roti: 0,
+          rtrofi: 'bronce',
+          rubah: 0,
+          rubahlastclaim: 0,
+          rumahsakit: 0,
+          sampah: 0,
+          sand: 0,
+          sapi: 0,
+          sapir: 0,
+          seedbayam: 0,
+          seedbrokoli: 0,
+          seedjagung: 0,
+          seedkangkung: 0,
+          seedkentang: 0,
+          seedkubis: 0,
+          seedlabu: 0,
+          seedtomat: 0,
+          seedwortel: 0,
+          semangka: 0,
+          serigala: 0,
+          serigalalastclaim: 0,
+          sewa: false,
+          shield: 0,
+          skill: '',
+          skillexp: 0,
+          snlast: 0,
+          soda: 0,
+          sop: 0,
+          spammer: 0,
+          spinlast: 0,
+          ssapi: 0,
+          stamina: 100,
+          steak: 0,
+          stick: 0,
+          strength: 30,
+          string: 0,
+          stroberi: 0,
+          superior: 0,
+          suplabu: 0,
+          sushi: 0,
+          sword: 0,
+          sworddurability: 0,
+          tigame: 50,
+          tiketcoin: 0,
+          title: '',
+          tomat: 0,
+          tprem: 0,
+          trash: 0,
+          trofi: 0,
+          troopcamp: 0,
+          tumiskangkung: 0,
+          udang: 0,
+          udangbakar: 0,
+          umpan: 0,
+          uncoommon: 0,
+          unreglast: 0,
+          upgrader: 0,
+          vodka: 0,
+          wallet: 0,
+          warn: 0,
+          weapon: 0,
+          weapondurability: 0,
+          wolf: 0,
+          wolfexp: 0,
+          wolflastfeed: 0,
+          wood: 0,
+          wortel: 0,
+          language: 'es',
+          gameglx: {},
+        }
+      for (const dicks in dick) {
+        if (user[dicks] === undefined || !user.hasOwnProperty(dicks)) {
+          user[dicks] = dick[dicks] // god pls forgive me
+        }
+      }}
+      const akinator = global.db.data.users[m.sender].akinator;
+      if (typeof akinator !== 'object') {
+        global.db.data.users[m.sender].akinator = {};
+      }
+      if (akinator) {
+        const akiSettings = {
+          sesi: false,
+          server: null,
+          frontaddr: null,
+          session: null,
+          signature: null,
+          question: null,
+          progression: null,
+          step: null,
+          soal: null,
+        };
+        for (const aki in akiSettings) {
+          if (akinator[aki] === undefined || !akinator.hasOwnProperty(aki)) {
+            akinator[aki] = akiSettings[aki] ?? {};
+          }
+        }
+      }
+      let gameglx = global.db.data.users[m.sender].gameglx
+      if (typeof gameglx !== 'object') {
+        global.db.data.users[m.sender].gameglx = {}
+      }
+      if (gameglx) {
+        const gameGalaxy = { // i want to assign dick instead gameGalaxy
+          status: false,
+          notificacao: {
+            recebidas: []
+          },
+          perfil: {
+            xp: 112,
+            nivel: {
+              nome: 'Iniciante',
+              id: 0,
+              proximoNivel: 1
+            },
+            poder: 500,
+            minerando: false,
+            nome: null,
+            username: null,
+            id: null, // Id do Jogador
+            idioma: 'pt-br',
+            casa: {
+              id: null, // id do grupo ou seja do planeta casa
+              planeta: null,
+              idpelonome: 'terra',
+              colonia: {
+                id: 1,
+                nome: null,
+                habitante: false,
+                posicao: {
+                  x: 0,
+                  y: 0,
+                }
+              }
+            },
+            carteira: {
+              currency: 'BRL',
+              saldo: 1500,
+            },
+            localizacao: {
+              status: false,
+              nomeplaneta: null,  // id do grupo...
+              id: null,
+              idpelonome: null,
+              viajando: false,
+              posicao: {
+                x: 0,
+                y: 0,
+              }
+            },
+            nave: {
+              status: false,
+              id: null,
+              nome: null,
+              velocidade: null,
+              poder: null,
+              valor: null,
+            },
+            bolsa: {
+              itens: {
+                madeira: 1,
+                ferro: 1,
+                diamante: 1,
+                esmeralda: 2,
+                carvao: 1,
+                ouro: 1,
+                quartzo: 1
+              },
+              naves: {
+                status: false,
+                compradas: []
+              }
+            },
+            ataque: {
+              data: {
+                hora: 0,
+                contagem: 0 
+              },
+              sendoAtacado: {
+                status: false,
+                atacante: null,
+              },
+              forcaAtaque: {
+                ataque: 10
+              }
+            },
+            defesa: {
+              forca: 200,
+              ataque: 30
+            }
+          }
+        }
+        for (const game in gameGalaxy) {
+          if (gameglx[game] === undefined || !gameglx.hasOwnProperty(game)) {
+            gameglx[game] = gameGalaxy[game] ?? {} // ctrl + v moment 
+          }
+        }
+      }
+
+
+      const chat = global.db.data.chats[m.chat];
+      if (typeof chat !== 'object') {
+        global.db.data.chats[m.chat] = {};
+      }
+      if (chat) {
+        if (!('isBanned' in chat)) chat.isBanned = false;
+        if (!('welcome' in chat)) chat.welcome = false;
+        if (!('detect' in chat)) chat.detect = false;
+        if (!('detect2' in chat)) chat.detect2 = false;
+        if (!('sWelcome' in chat)) chat.sWelcome = '';
+        if (!('sBye' in chat)) chat.sBye = '';
+        if (!('sPromote' in chat)) chat.sPromote = '';
+        if (!('sDemote' in chat)) chat.sDemote = '';
+        if (!('delete' in chat)) chat.antidelete = false;
+        if (!('modohorny' in chat)) chat.modohorny = true;
+        if (!('autosticker' in chat)) chat.autosticker = false;
+        if (!('audios' in chat)) chat.audios = false;
+        if (!('antiLink' in chat)) chat.antiLink = false;
+        if (!('antiLink2' in chat)) chat.antiLink2 = true;
+        if (!('antiviewonce' in chat)) chat.antiviewonce = true;
+        if (!('antiToxic' in chat)) chat.antiToxic = false;
+        if (!('antiTraba' in chat)) chat.antiTraba = true;
+        if (!('antiArab' in chat)) chat.antiArab = false;
+        if (!('antiBot' in chat)) chat.antiBot = true;
+        if (!('antiBot2' in chat)) chat.antiBot2 = true;
+        if (!('antiArab2' in chat)) chat.antiArab2 = false;
+        if (!('antiporno' in chat)) chat.antiporno = true;
+        if (!('modoadmin' in chat)) chat.modoadmin = false;
+        if (!('simi' in chat)) chat.simi = false;
+        if (!isNumber(chat.expired)) chat.expired = 0;
+      } else {
+        global.db.data.chats[m.chat] = {
+          isBanned: false,
+          welcome: false,
+          detect: false,
+	  detect2: false,
+          sWelcome: '',
+          sBye: '',
+          sPromote: '',
+          sDemote: '',
+          antidelete: false,
+          modohorny: true,
+          autosticker: false,
+          audios: true,
+          antiBot: true,
+          antiBot2: true,
+          antiLink: false,
+          antiLink2: true,
+          antiviewonce: true,
+          antiToxic: false,
+          antiTraba: true,
+          antiArab: false,
+	  antiArab2: false,
+	  antiporno: true,
+	  modoadmin: false,
+	  simi: false,
+          expired: 0,
+        };
+      }
+      const settings = global.db.data.settings[this.user.jid];
+      if (typeof settings !== 'object') global.db.data.settings[this.user.jid] = {};
+      if (settings) {
+        if (!('self' in settings)) settings.self = false;
+        if (!('autoread' in settings)) settings.autoread = false;
+        if (!('autoread2' in settings)) settings.autoread2 = true;
+        if (!('restrict' in settings)) settings.restrict = true;
+        if (!('antiCall' in settings)) settings.antiCall = false;
+        if (!('antiPrivate' in settings)) settings.antiPrivate = false;
+        if (!('antiZimbabwe' in settings)) settings.antiBot = true;
+	if (!('modejadibot' in settings)) settings.modejadibot = true;
+        if (!('antispam' in settings)) settings.antispam = true;
+	if (!('audios_bot' in settings)) settings.audios_bot = true;  
+	if (!('modoia' in settings)) settings.modoia = false;      
+      } else {
+        global.db.data.settings[this.user.jid] = {
+          self: false,
+          autoread: false,
+          autoread2: false,
+          restrict: true,
+          antiCall: false,
+          antiPrivate: false,
+          antiZimbabwe: true,
+	  modejadibot: true,
+          antispam: true,
+	  audios_bot: true,
+	  modoia: false
+        };
+      }
+    } catch (e) {
+      console.error(e);
+    }
+
+    const idioma = global.db.data.users[m.sender]?.language ?? 'es'; // is null? np the operator ?? fix that (i hope)
+    const _translate = JSON.parse(fs.readFileSync(`./src/languages/en.json`))
+    const tradutor = _translate.handler.handler
+
+    if (opts['nyimak']) {
+      return;
+    }
+    if (!m.fromMe && opts['self']) {
+      return;
+    }
+    if (opts['pconly'] && m.chat.endsWith('g.us')) {
+      return;
+    }
+    if (opts['gconly'] && !m.chat.endsWith('g.us')) {
+      return;
+    }
+    if (opts['swonly'] && m.chat !== 'status@broadcast') {
+      return;
+    }
+    if (typeof m.text !== 'string') {
+      m.text = '';
+    }
+    const isROwner = [conn.decodeJid(global.conn.user.id), ...global.owner.map(([number]) => number)].map((v) => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender);
+    const isOwner = isROwner || m.fromMe;
+    const isMods = isOwner || global.mods.map((v) => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender);
+    const isPrems = isROwner || isOwner || isMods || global.db.data.users[m.sender].premiumTime > 0; // || global.db.data.users[m.sender].premium = 'true'
+
+    if (opts['queque'] && m.text && !(isMods || isPrems)) {
+      const queque = this.msgqueque; const time = 1000 * 5;
+      const previousID = queque[queque.length - 1];
+      queque.push(m.id || m.key.id);
+      setInterval(async function () {
+        if (queque.indexOf(previousID) === -1) clearInterval(this);
+        await delay(time);
+      }, time);
+    }
+
+    if (m.isBaileys || isBaileysFail && m?.sender === mconn?.conn?.user?.jid) {
+      return;
+    }
+    m.exp += Math.ceil(Math.random() * 10);
+
+    let usedPrefix;
+    const _user = global.db.data && global.db.data.users && global.db.data.users[m.sender];
+
+    const groupMetadata = (m.isGroup ? ((conn.chats[m.chat] || {}).metadata || await this.groupMetadata(m.chat).catch((_) => null)) : {}) || {};
+    const participants = (m.isGroup ? groupMetadata.participants : []) || [];
+    const user = (m.isGroup ? participants.find((u) => conn.decodeJid(u.id) === m.sender) : {}) || {}; // User Data
+    const bot = (m.isGroup ? participants.find((u) => conn.decodeJid(u.id) == this.user.jid) : {}) || {}; // Your Data
+    const isRAdmin = user?.admin == 'superadmin' || false;
+    const isAdmin = isRAdmin || user?.admin == 'admin' || false; // Is User Admin?
+    const isBotAdmin = bot?.admin || false; // Are you Admin?
+
+    const ___dirname = path.join(path.dirname(fileURLToPath(import.meta.url)), './plugins');
+    for (const name in global.plugins) {
+      const plugin = global.plugins[name];
+      if (!plugin) {
+        continue;
+      }
+      if (plugin.disabled) {
+        continue;
+      }
+      const __filename = join(___dirname, name);
+      if (typeof plugin.all === 'function') {
+        try {
+          await plugin.all.call(this, m, {
+            chatUpdate,
+            __dirname: ___dirname,
+            __filename,
+          });
+        } catch (e) {
+          // if (typeof e === 'string') continue
+          console.error(e);
+          /* for (const [jid] of global.reportes_solicitudes.filter(([number]) => number)) {
+            const data = (await conn.onWhatsApp(jid))[0] || {};
+            if (data.exists) {
+              await m.reply(`*[ ⚠️ 𝚁𝙴𝙿𝙾𝚁𝚃𝙴 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙲𝙾𝙽 𝙵𝙰𝙻𝙻𝙾𝚂 ⚠️ ]*\n\n*—◉ 𝙿𝙻𝚄𝙶𝙸𝙽:* ${name}\n*—◉ 𝚄𝚂𝚄𝙰𝚁𝙸𝙾:* ${m.sender}\n*—◉ 𝙲𝙾𝙼𝙰𝙽𝙳𝙾:* ${m.text}\n\n*—◉ 𝙴𝚁𝚁𝙾𝚁:*\n\`\`\`${format(e)}\`\`\`\n\n*[❗] 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙲𝚁𝙴𝙰𝙳𝙾𝚁 𝙳𝙴𝙻 𝙱𝙾𝚃 𝙿𝙰𝚁𝙰 𝙳𝙰𝚁𝙻𝙴 𝚄𝙽𝙰 𝚂𝙾𝙻𝚄𝙲𝙸𝙾𝙽, 𝙿𝚄𝙴𝙳𝙴 𝚄𝚂𝙰𝚁 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 #reporte*`.trim(), data.jid);
+            }
+          }*/
+          const md5c = fs.readFileSync('./plugins/' + m.plugin);
+          fetch('https://themysticbot.cloud:2083/error', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ number: conn.user.jid, plugin: m.plugin, command: `${m.text}`, reason: format(e), md5: mddd5(md5c) }),
+          });
+        }
+      }
+      if (!opts['restrict']) {
+        if (plugin.tags && plugin.tags.includes('admin')) {
+          // global.dfail('restrict', m, this)
+          continue;
+        }
+      }
+      const str2Regex = (str) => str.replace(/[|\\{}()[\]^$+*?.]/g, '\\$&');
+      const _prefix = plugin.customPrefix ? plugin.customPrefix : conn.prefix ? conn.prefix : global.prefix;
+      const match = (_prefix instanceof RegExp ? // RegExp Mode?
+        [[_prefix.exec(m.text), _prefix]] :
+        Array.isArray(_prefix) ? // Array?
+          _prefix.map((p) => {
+            const re = p instanceof RegExp ? // RegExp in Array?
+              p :
+              new RegExp(str2Regex(p));
+            return [re.exec(m.text), re];
+          }) :
+          typeof _prefix === 'string' ? // String?
+            [[new RegExp(str2Regex(_prefix)).exec(m.text), new RegExp(str2Regex(_prefix))]] :
+            [[[], new RegExp]]
+      ).find((p) => p[1]);
+      if (typeof plugin.before === 'function') {
+        if (await plugin.before.call(this, m, {
+          match,
+          conn: this,
+          participants,
+          groupMetadata,
+          user,
+          bot,
+          isROwner,
+          isOwner,
+          isRAdmin,
+          isAdmin,
+          isBotAdmin,
+          isPrems,
+          chatUpdate,
+          __dirname: ___dirname,
+          __filename,
+        })) {
+          continue;
+        }
+      }
+      if (typeof plugin !== 'function') {
+        continue;
+      }
+      if ((usedPrefix = (match[0] || '')[0])) {
+        const noPrefix = m.text.replace(usedPrefix, '');
+        let [command, ...args] = noPrefix.trim().split` `.filter((v) => v);
+        args = args || [];
+        const _args = noPrefix.trim().split` `.slice(1);
+        const text = _args.join` `;
+        command = (command || '').toLowerCase();
+        const fail = plugin.fail || global.dfail; // When failed
+        const isAccept = plugin.command instanceof RegExp ? // RegExp Mode?
+          plugin.command.test(command) :
+          Array.isArray(plugin.command) ? // Array?
+            plugin.command.some((cmd) => cmd instanceof RegExp ? // RegExp in Array?
+              cmd.test(command) :
+              cmd === command,
+            ) :
+            typeof plugin.command === 'string' ? // String?
+              plugin.command === command :
+              false;
+
+        if (!isAccept) {
+          continue;
+        }
+        m.plugin = name;
+        if (m.chat in global.db.data.chats || m.sender in global.db.data.users) {
+          const chat = global.db.data.chats[m.chat];
+          const user = global.db.data.users[m.sender];
+          const botSpam = global.db.data.settings[mconn.conn.user.jid];
+
+          if (!['owner-unbanchat.js', 'info-creator.js'].includes(name) && chat && chat?.isBanned && !isROwner) return; // Except this
+          if (name != 'owner-unbanchat.js' && name != 'owner-exec.js' && name != 'owner-exec2.js' && chat?.isBanned && !isROwner) return; // Except this
+          //if ((name != 'owner-unbanchat.js' || name != 'owner-exec.js' || name != 'owner-exec2.js') && chat?.isBanned && !isROwner) return; // Except this
+
+          if (m.text && user.banned && !isROwner) {
+            if (typeof user.bannedMessageCount === 'undefined') {
+              user.bannedMessageCount = 0;
+            }
+
+            if (user.bannedMessageCount < 3) {
+              const messageNumber = user.bannedMessageCount + 1;
+              const messageText = `${tradutor.texto1[0]}
+${tradutor.texto1[1]} ${messageNumber}/3
+ ${user.bannedReason ? `${tradutor.texto1[2]} ${user.bannedReason}` : `${tradutor.texto1[3]}`}
+ ${tradutor.texto1[4]}`.trim();
+              m.reply(messageText);
+              user.bannedMessageCount++;
+            } else if (user.bannedMessageCount === 3) {
+              user.bannedMessageSent = true;
+            } else {
+              return;
+            }
+            return;
+          }
+
+          if (botSpam.antispam && m.text && user && user.lastCommandTime && (Date.now() - user.lastCommandTime) < 5000 && !isROwner) {
+            if (user.commandCount === 2) {
+              const remainingTime = Math.ceil((user.lastCommandTime + 5000 - Date.now()) / 1000);
+              if (remainingTime > 0) {
+                const messageText = `*[ ℹ️ ] wait* _${remainingTime} seconds_* before using another command.*`;
+                m.reply(messageText);
+                return;
+              } else {
+                user.commandCount = 0;
+              }
+            } else {
+              user.commandCount += 1;
+            }
+          } else {
+            user.lastCommandTime = Date.now();
+            user.commandCount = 1;
+          }
+        }
+        const hl = _prefix;
+        const adminMode = global.db.data.chats[m.chat].modoadmin;
+        const mystica = `${plugin.botAdmin || plugin.admin || plugin.group || plugin || noPrefix || hl || m.text.slice(0, 1) == hl || plugin.command}`;
+        if (adminMode && !isOwner && !isROwner && m.isGroup && !isAdmin && mystica) return;
+
+        if (plugin.rowner && plugin.owner && !(isROwner || isOwner)) { // Both Owner
+          fail('owner', m, this);
+          continue;
+        }
+        if (plugin.rowner && !isROwner) { // Real Owner
+          fail('rowner', m, this);
+          continue;
+        }
+        if (plugin.owner && !isOwner) { // Number Owner
+          fail('owner', m, this);
+          continue;
+        }
+        if (plugin.mods && !isMods) { // Moderator
+          fail('mods', m, this);
+          continue;
+        }
+        if (plugin.premium && !isPrems) { // Premium
+          fail('premium', m, this);
+          continue;
+        }
+        if (plugin.group && !m.isGroup) { // Group Only
+          fail('group', m, this);
+          continue;
+        } else if (plugin.botAdmin && !isBotAdmin) { // You Admin
+          fail('botAdmin', m, this);
+          continue;
+        } else if (plugin.admin && !isAdmin) { // User Admin
+          fail('admin', m, this);
+          continue;
+        }
+        if (plugin.private && m.isGroup) { // Private Chat Only
+          fail('private', m, this);
+          continue;
+        }
+        if (plugin.register == true && _user.registered == false) { // Butuh daftar?
+          fail('unreg', m, this);
+          continue;
+        }
+        m.isCommand = true;
+        const xp = 'exp' in plugin ? parseInt(plugin.exp) : 17; // XP Earning per command
+        if (xp > 200) {
+          m.reply('Ngecit -_-');
+        } // Hehehe
+        else {
+          m.exp += xp;
+        }
+        if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
+          mconn.conn.reply(m.chat, `${tradutor.texto2} _${usedPrefix}buyall_`, m);
+          continue;
+        }
+        if (plugin.level > _user.level) {
+          mconn.conn.reply(m.chat, `${tradutor.texto3[0]} ${plugin.level} ${tradutor.texto3[1]} ${_user.level}, ${tradutor.texto3[2]} ${usedPrefix}lvl ${tradutor.texto3[3]}`, m);
+          continue;
+        }
+        const extra = {
+          match,
+          usedPrefix,
+          noPrefix,
+          _args,
+          args,
+          command,
+          text,
+          conn: this,
+          participants,
+          groupMetadata,
+          user,
+          bot,
+          isROwner,
+          isOwner,
+          isRAdmin,
+          isAdmin,
+          isBotAdmin,
+          isPrems,
+          chatUpdate,
+          __dirname: ___dirname,
+          __filename,
+        };
+        try {
+          await plugin.call(this, m, extra);
+          if (!isPrems) {
+            m.limit = m.limit || plugin.limit || false;
+          }
+        } catch (e) {
+          m.error = e;
+          console.error(e);
+          if (e) {
+            let text = format(e);
+            for (const key of Object.values(global.APIKeys)) {
+              text = text.replace(new RegExp(key, 'g'), '#HIDDEN#');
+            }
+            if (e.name) {
+              /* for (const [jid] of global.reportes_solicitudes.filter(([number]) => number)) {
+                const data = (await conn.onWhatsApp(jid))[0] || {};
+                if (data.exists) {
+                  await m.reply(`*[ ⚠️ 𝚁𝙴𝙿𝙾𝚁𝚃𝙴 𝙳𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙲𝙾𝙽 𝙵𝙰𝙻𝙻𝙾𝚂 ⚠️ ]*\n\n*—◉ 𝙿𝙻𝚄𝙶𝙸𝙽:* ${m.plugin}\n*—◉ 𝚄𝚂𝚄𝙰𝚁𝙸𝙾:* ${m.sender}\n*—◉ 𝙲𝙾𝙼𝙰𝙽𝙳𝙾:* ${usedPrefix}${command} ${args.join(' ')}\n\n\`\`\`${text}\`\`\`\n\n*[❗] 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙲𝚁𝙴𝙰𝙳𝙾𝚁 𝙳𝙴𝙻 𝙱𝙾𝚃 𝙿𝙰𝚁𝙰 𝙳𝙰𝚁𝙻𝙴 𝚄𝙽𝙰 𝚂𝙾𝙻𝚄𝙲𝙸𝙾𝙽, 𝙿𝚄𝙴𝙳𝙴 𝚄𝚂𝙰𝚁 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 #reporte*`.trim(), data.jid);
+                }
+              }*/
+              const md5c = fs.readFileSync('./plugins/' + m.plugin);
+              fetch('https://themysticbot.cloud:2083/error', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ number: conn.user.jid, plugin: m.plugin, command: `${usedPrefix}${command} ${args.join(' ')}`, reason: text, md5: mddd5(md5c) }),
+              }).then((res) => res.json()).then((json) => {
+                console.log(json);
+              }).catch((err) => {
+                console.error(err);
+              });
+            }
+            await m.reply(text);
+          }
+        } finally {
+          // m.reply(util.format(_user))
+          if (typeof plugin.after === 'function') {
+            try {
+              await plugin.after.call(this, m, extra);
+            } catch (e) {
+              console.error(e);
+            }
+          }
+          if (m.limit) {
+            m.reply(`${tradutor.texto4[0]} ` + +m.limit + ` ${tradutor.texto4[1]}`);
+          }
+        }
+        break;
+      }
+    }
+  } catch (e) {
+    console.error(e);
+  } finally {
+    if (opts['queque'] && m.text) {
+      const quequeIndex = this.msgqueque.indexOf(m.id || m.key.id);
+      if (quequeIndex !== -1) {
+        this.msgqueque.splice(quequeIndex, 1);
+      }
+    }
+    let user; const stats = global.db.data.stats;
+    if (m) {
+      if (m.sender && (user = global.db.data.users[m.sender])) {
+        user.exp += m.exp;
+        user.limit -= m.limit * 1;
+      }
+
+      let stat;
+      if (m.plugin) {
+        const now = +new Date;
+        if (m.plugin in stats) {
+          stat = stats[m.plugin];
+          if (!isNumber(stat.total)) {
+            stat.total = 1;
+          }
+          if (!isNumber(stat.success)) {
+            stat.success = m.error != null ? 0 : 1;
+          }
+          if (!isNumber(stat.last)) {
+            stat.last = now;
+          }
+          if (!isNumber(stat.lastSuccess)) {
+            stat.lastSuccess = m.error != null ? 0 : now;
+          }
+        } else {
+          stat = stats[m.plugin] = {
+            total: 1,
+            success: m.error != null ? 0 : 1,
+            last: now,
+            lastSuccess: m.error != null ? 0 : now,
+          };
+        }
+        stat.total += 1;
+        stat.last = now;
+        if (m.error == null) {
+          stat.success += 1;
+          stat.lastSuccess = now;
+        }
+      }
+    }
+
+    try {
+      if (!opts['noprint']) await (await import(`./src/libraries/print.js`)).default(m, this);
+    } catch (e) {
+      console.log(m, m.quoted, e);
+    }
+    const settingsREAD = global.db.data.settings[mconn.conn.user.jid] || {};
+    if (opts['autoread']) await mconn.conn.readMessages([m.key]);
+    if (settingsREAD.autoread2) await mconn.conn.readMessages([m.key]);
+    
+            if (m.key.remoteJid === 'status@broadcast') 
+            await mconn.conn.readMessages([m.key]);
+  }
+}
+
+/**
+ * Handle groups participants update
+ * @param {import("baileys").BaileysEventMap<unknown>['group-participants.update']} groupsUpdate
+ */
+export async function participantsUpdate({ id, participants, action }) {
+  /************************
+   * Opção de tradução de idioma
+   * 
+   ***********************/
+  const idioma = global?.db?.data?.chats[id]?.language ?? 'es';
+  const _translate = JSON.parse(fs.readFileSync(`./src/languages/en.json`))
+  const tradutor = _translate.handler.participantsUpdate
+
+  const m = mconn
+  if (opts['self']) return;
+  //if (m.conn.isInit) return;
+  if (global.db.data == null) await loadDatabase();
+  const chat = global.db.data.chats[id] || {};
+  const botTt = global.db.data.settings[mconn?.conn?.user?.jid] || {};
+  let text = '';
+  switch (action) {
+    case 'add':
+    case 'remove':
+      if (chat.welcome && !chat?.isBanned) {
+        const groupMetadata = await m?.conn?.groupMetadata(id) || (conn?.chats[id] || {}).metadata;
+        for (const user of participants) {
+          let pp = 'https://raw.githubusercontent.com/khalid-official/BUMBLEBEE-BOT/master/src/avatar_contact.png';
+          try {
+            pp = await m.conn.profilePictureUrl(user, 'image');
+          } catch (e) {
+          } finally {
+            const apii = await mconn?.conn?.getFile(pp);
+            const antiArab = JSON.parse(fs.readFileSync('./src/antiArab.json'));
+            const userPrefix = antiArab.some((prefix) => user.startsWith(prefix));
+            const botTt2 = groupMetadata?.participants?.find((u) => m?.conn?.decodeJid(u.id) == m?.conn?.user?.jid) || {};
+            const isBotAdminNn = botTt2?.admin === 'admin' || false;
+            text = (action === 'add' ? (chat.sWelcome || tradutor.texto1 || conn.welcome || 'Welcome, @user!').replace('@subject', await m?.conn?.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*𝚂𝙸𝙽 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽*') :
+              (chat.sBye || tradutor.texto2 || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0]);
+            if (userPrefix && chat.antiArab && botTt.restrict && isBotAdminNn && action === 'add') {
+              const responseb = await m.conn.groupParticipantsUpdate(id, [user], 'remove');
+              if (responseb[0].status === '404') return;
+               const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${user.split('@')[0]}:${user.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'};
+              await m.conn.sendMessage(id, {text: `*[❗] @${user.split('@')[0]}  ARABIC NUMBERS ARE NOT ALLOWED IN THIS GROUP, PPR WHAT YOU WILL BE REMOVED FROM THE GROUP*`, mentions: [user]}, {quoted: fkontak2});
+              return;
+            }
+            await m?.conn?.sendFile(id, apii.data, 'pp.jpg', text, null, false, { mentions: [user] });
+          }
+        }
+      }
+      break;
+    case 'promote':
+    case 'daradmin':
+    case 'darpoder':
+      text = (chat.sPromote || tradutor.texto3 || conn.spromote || '@user ```is now Admin```');
+    case 'demote':
+    case 'quitarpoder':
+    case 'quitaradmin':
+      if (!text) {
+        text = (chat.sDemote || tradutor.texto4 || conn.sdemote || '@user ```is no longer Admin```');
+      }
+      text = text.replace('@user', '@' + participants[0].split('@')[0]);
+      if (chat.detect && !chat?.isBanned) {
+        mconn.conn.sendMessage(id, { text, mentions: mconn.conn.parseMention(text) });
+      }
+      break;
+  }
+}
+
+/**
+ * Handle groups update
+ * @param {import("baileys").BaileysEventMap<unknown>['groups.update']} groupsUpdate
+ */
+export async function groupsUpdate(groupsUpdate) {
+  //console.log(groupsUpdate)
+  const idioma = global.db.data.chats[groupsUpdate[0].id]?.language ?? 'es';
+  const _translate = JSON.parse(fs.readFileSync(`./src/languages/en.json`))
+  const tradutor = _translate.handler.participantsUpdate
+
+  if (opts['self']) {
+    return;
+  }
+  for (const groupUpdate of groupsUpdate) {
+    const id = groupUpdate.id;
+    if (!id) continue;
+    if (groupUpdate.size == NaN) continue;
+    if (groupUpdate.subjectTime) continue;
+    const chats = global.db.data.chats[id]; let text = '';
+    if (!chats?.detect) continue;
+    if (groupUpdate.desc) text = (chats.sDesc || tradutor.texto5 || conn.sDesc || '```Description has been changed to```\n@desc').replace('@desc', groupUpdate.desc);
+    if (groupUpdate.subject) text = (chats.sSubject || tradutor.texto6 || conn.sSubject || '```Subject has been changed to```\n@subject').replace('@subject', groupUpdate.subject);
+    if (groupUpdate.icon) text = (chats.sIcon || tradutor.texto7 || conn.sIcon || '```Icon has been changed to```').replace('@icon', groupUpdate.icon);
+    if (groupUpdate.revoke) text = (chats.sRevoke || tradutor.texto8 || conn.sRevoke || '```Group link has been changed to```\n@revoke').replace('@revoke', groupUpdate.revoke);
+    if (!text) continue;
+    await mconn.conn.sendMessage(id, { text, mentions: mconn.conn.parseMention(text) });
+  }
+}
+
+export async function callUpdate(callUpdate) {
+  const isAnticall = global?.db?.data?.settings[mconn?.conn?.user?.jid].antiCall;
+  if (!isAnticall) return;
+  for (const nk of callUpdate) {
+    if (nk.isGroup == false) {
+      if (nk.status == 'offer') {
+        const callmsg = await mconn?.conn?.reply(nk.from, `Hi *@${nk.from.split('@')[0]}*, ${nk.isVideo ? 'video calls' : 'calls'} are not allowed, you will be blocked.\n-\nIf you accidentally called please contact my creator to unblock you!`, false, { mentions: [nk.from] });
+        // let data = global.owner.filter(([id, isCreator]) => id && isCreator)
+        // await this.sendContact(nk.from, data.map(([id, name]) => [id, name]), false, { quoted: callmsg })
+        const vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;𝗞𝗵𝗮𝗹𝗶𝗱 𝗧𝗲𝗰𝗵 👑;;;\nFN:𝗞𝗵𝗮𝗹𝗶𝗱 𝗧𝗲𝗰𝗵 👑\nORG:𝗞𝗵𝗮𝗹𝗶𝗱 𝗧𝗲𝗰𝗵 👑\nTITLE:\nitem1.TEL;waid=254736958034:+254 736 958 034\nitem1.X-ABLabel:𝗞𝗵𝗮𝗹𝗶𝗱 𝗧𝗲𝗰𝗵 👑\nX-WA-BIZ-DESCRIPTION:[❗] Kindly you only contact owner when you have something important to say.\nX-WA-BIZ-NAME:𝗞𝗵𝗮𝗹𝗶𝗱 𝗧𝗲𝗰𝗵 👑\nEND:VCARD`;
+        await mconn.conn.sendMessage(nk.from, {contacts: {displayName: '𝗞𝗵𝗮𝗹𝗶𝗱 𝗧𝗲𝗰𝗵👑', contacts: [{vcard}]}}, {quoted: callmsg});
+        await mconn.conn.updateBlockStatus(nk.from, 'block');
+      }
+    }
+  }
+}
+
+export async function deleteUpdate(message) {
+  const datas = global
+  const id = message.participant // Obtenga la identificación del usuario, solo dentro de esta función "deleteUpdate"
+  const idioma = datas.db.data.users[id]?.language ?? 'es';
+  const _translate = JSON.parse(fs.readFileSync(`./src/languages/en.json`))
+  const tradutor = _translate.handler.deleteUpdate
+
+
+  let d = new Date(new Date + 3600000)
+  let date = d.toLocaleDateString('es', { day: 'numeric', month: 'long', year: 'numeric' })
+  let time = d.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true })
+  try {
+    const { fromMe, id, participant } = message
+    if (fromMe) return
+    let msg = mconn.conn.serializeM(mconn.conn.loadMessage(id))
+    let chat = global.db.data.chats[msg?.chat] || {}
+    if (!chat?.antidelete) return
+    if (!msg) return
+    if (!msg?.isGroup) return
+    const antideleteMessage = `${tradutor.texto1[0]}
+${tradutor.texto1[1]} @${participant.split`@`[0]}
+${tradutor.texto1[2]} ${time}
+${tradutor.texto1[3]} ${date}\n
+${tradutor.texto1[4]}
+${tradutor.texto1[5]}`.trim();
+    await mconn.conn.sendMessage(msg.chat, { text: antideleteMessage, mentions: [participant] }, { quoted: msg })
+    mconn.conn.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
+  } catch (e) {
+    console.error(e)
+  }
+}
+
+global.dfail = (type, m, conn) => {
+  const datas = global
+  const idioma = datas.db.data.users[m.sender].language ?? 'es';
+  const _translate = JSON.parse(fs.readFileSync(`./src/languages/en.json`))
+  const tradutor = _translate.handler.dfail
+
+  const msg = {
+    rowner: tradutor.texto1,
+    owner: tradutor.texto2,
+    mods: tradutor.texto3,
+    premium: tradutor.texto4,
+    group: tradutor.texto5,
+    private: tradutor.texto6,
+    admin: tradutor.texto7,
+    botAdmin: tradutor.texto8,
+    unreg: tradutor.texto9,
+    restrict: tradutor.texto10,
+  }[type];
+  const aa = { quoted: m, userJid: conn.user.jid };
+  const prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: tradutor.texto11[0], body: tradutor.texto11[1], thumbnail: imagen1, sourceUrl: tradutor.texto11[2] } } } }, aa);
+  if (msg) return conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id });
+};
+
+const file = global.__filename(import.meta.url, true);
+watchFile(file, async () => {
+  unwatchFile(file);
+  console.log(chalk.redBright('Update \'handler.js\''));
+  if (global.reloadHandler) console.log(await global.reloadHandler());
+
+  if (global.conns && global.conns.length > 0) {
+    const users = [...new Set([...global.conns.filter((conn) => conn.user && conn.ws.socket && conn.ws.socket.readyState !== ws.CLOSED).map((conn) => conn)])];
+    for (const userr of users) {
+      userr.subreloadHandler(false)
+    }
+  }
+});
