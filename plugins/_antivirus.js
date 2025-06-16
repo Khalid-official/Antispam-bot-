@@ -1,4 +1,4 @@
-const handler = (m) => m;
+/*const handler = (m) => m;
 
 handler.all = async function (m, { isBotAdmin }) {
   // Check if the message is in a personal chat
